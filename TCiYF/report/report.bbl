@@ -32,4 +32,16 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+\bibitem[\protect\citeauthoryear{Hirata and Mizuno}{Hirata and Mizuno}{2011}]%
+        {Hirata}
+{Yukinao Hirata} {and} {Osamu Mizuno}. 2011.
+\newblock \showarticletitle{Do Comments Explain Codes Adequately?:
+  Investigation by Text Filtering}.
+\newblock  (2011), 242--245.
+\newblock
+\showISBNx{978-1-4503-0574-7}
+\showDOI{%
+\url{http://dx.doi.org/10.1145/1985441.1985482}}
+
+
 \end{thebibliography}

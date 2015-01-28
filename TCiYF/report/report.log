@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/MacPorts 2014_4) (preloaded format=latex 2015.1.27)  27 JAN 2015 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/MacPorts 2014_4) (preloaded format=latex 2015.1.27)  28 JAN 2015 10:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -147,79 +147,65 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Try loading font information for OT1+pnc on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+pnc on input line 36.
  (/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1pnc.fd
 File: ot1pnc.fd 2001/06/04 font definitions for OT1/pnc.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 79.
+(Font)              <8> on input line 80.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 79.
+(Font)              <6> on input line 80.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 79.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 79.
+(Font)              <5> on input line 80.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 80.
 
 (/opt/local/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+pnc on input line 79.
+LaTeX Font Info:    Try loading font information for OMS+pnc on input line 80.
 
 (/opt/local/share/texmf-texlive/tex/latex/psnfss/omspnc.fd
 File: omspnc.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pnc/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 81.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 82.
 
 (/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 81.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 82.
 LaTeX Font Info:    Font shape `OT1/pnc/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 81.
+(Font)              Font shape `OT1/pnc/b/n' tried instead on input line 82.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 84.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 111.
-
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 85.
+ (./report.bbl
 Overfull \vbox (72.27pt too high) has occurred while \output is active []
 
  [1
 
-]
-(./report.bbl
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \end{thebibliography}
-                          
-? R
-OK, entering \nonstopmode...
-) [2] (./report.aux) ) 
+])
+[2] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2537 strings out of 495026
- 31772 string characters out of 6181464
- 101013 words of memory out of 5000000
- 5763 multiletter control sequences out of 15000+600000
- 11875 words of font info for 38 fonts, out of 8000000 for 9000
+ 2533 strings out of 495026
+ 31730 string characters out of 6181464
+ 100060 words of memory out of 5000000
+ 5761 multiletter control sequences out of 15000+600000
+ 11663 words of font info for 36 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,8n,22p,299b,185s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,8n,22p,299b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.dvi (2 pages, 5140 bytes).
+Output written on report.dvi (2 pages, 4160 bytes).
