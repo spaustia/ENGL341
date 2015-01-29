@@ -18,6 +18,7 @@
 
 % Package to generate and customize Algorithm as per ACM style
 \usepackage[ruled]{algorithm2e}
+\usepackage{tabularx,placeins}
 \renewcommand{\algorithmcfname}{ALGORITHM}
 \SetAlFnt{\small}
 \SetAlCapFnt{\small}
@@ -51,7 +52,7 @@
 %       currently affiliated with NASA.
 
 \begin{abstract}
-TODO: ABSTRACT \cite{Hirata}
+TODO [ the absract goes here, dummy ]
 \end{abstract}
 
 \category{C.2.2}{Technical Communication}{Computer Science}
@@ -61,16 +62,6 @@ TODO: ABSTRACT \cite{Hirata}
 \keywords{Technical Communication, ACM Small Format}
 
 \acmformat{Steven Paustian 2015. Technical Communication in Your Field}
-% At a minimum you need to supply the author names, year and a title.
-% IMPORTANT:
-% Full first names whenever they are known, surname last, followed by a period.
-% In the case of two authors, 'and' is placed between them.
-% In the case of three or more authors, the serial comma is used, that is, all author names
-% except the last one but including the penultimate author's name are followed by a comma,
-% and then 'and' is placed before the final author's name.
-% If only first and middle initials are known, then each initial
-% is followed by a period and they are separated by a space.
-% The remaining information (journal title, volume, article number, date, etc.) is 'auto-generated'.
 
 \begin{bottomstuff}
 This work was intended, designed, and written for ENGL341-02, Spring 2015.
@@ -83,31 +74,71 @@ New Mexico Institute of Mining \& Technology, Socorro, NM.
 
 
 \section{Introduction}
+Computer Science (CS) is the study of computation and its applications.  CS majors are employed in a wide variety of positions post-graduation; prominent job titles include Application Developer, Information Technology Architect, and Systems Administrator.  \cite{payscale}
 
-TODO: INTRODUCTION
+The CS field contains a broad array of delivery mechanisms for technical information.  Many are comparable to other fields, including peer reviewed journals, memos, and technical reports.  In addition, it involves a number of communication tools that are unique such as issue tracking and code commenting. 
+
+To further explore technical communication in the field, the author interviewed a recent graduate and a seasoned professional programmer.  A discussion of these interviews can be found in [\ref{interviews}].  Three examples technical documents were gathered and will be discussed in [\ref{ex_documents}].  Two secondary sources regarding technical communication in the field were also found and will be discussed in [\ref{sec_documents}].
 
 % Head 1
-\section{Interviews}
+\section{Interview Analysis}\label{interviews}
 
 % Head 2
-\subsection{Professional 1}
-TODO
-\subsection{Professional 2}
-TODO
+\subsection{Professional Programmer}
+Frank Germano, a professional programmer of 30 years, was a wealth of information regarding technical communication.  As a former vice president of a software engineering company, and current lead developer, he noted technical communication requirements may vary widely through one's career. 
 
-\section{Typical references in new ACM Reference Format}
-TODO
+As a lowly programmer, most technical communication involves code commenting, software documentation, and issue tracking (verbose descriptions of buggy code).  Lead developers and project managers serve as a bridge between programmers and non-technical management, and their communications reflect this.  They tend to handle state diagrams, flowcharts/UML diagrams, memos, and (sometimes) contracts.  He revealed that larger firms will typically include a Technical Writer in teams working on large project.  This person's sole responsibility is creating, editing and interpreting technical documention for the software the team is currently writing. 
 
-\section{Example Documents}
-TODO
+The bulk of a programmer's non-coding time is spent on internal communication, namely emails.
+
+TODO[ Add time limitations, revision process ]
+
+\subsection{Recent Graduate}
+Jon Zingale is a recent graduate from The University of Texas as a math major with a CS minor.  He was hired by a security firm in Silicon Valley.  He reports that a large portion of his time is spent on communication; mostly emails, memos, and documenting security problems both in code and an internal issue registration system.  He rarely needs to convey technical information to non-technical personel, though he was recently asked to give a presentation to client regarding security holes discovered by his team.  \\
+TODO[ flesh this out ]
+
+\section{Example Documents}\label{ex_documents}
+Three example documents were obtained from Frank and Jon.  They are: an example of properly commented code, an example of issue documention, and a monthly memo sent to clients. \\
+TODO[ add margins to table, fix table placement, finish table cells ]
+
+\FloatBarrier
+
+{\renewcommand{\arraystretch}{2}
+\begin{table}[]
+    \centering
+    \begin{tabularx}{\textwidth}{ X | X | X | X | X }
+        \hline
+         Document Type & Audience  & Purpose & Style & Formating \\ \hline
+
+        Issue \newline Tracking & Management tracking progress on a bug fix. \newline \newline Internal programmers assigned to fix the issue.  & Provide specific technical and tracking information regarding a bug that needs to be fixed. & 3 & Conforms to internal specifications designed for clear communication of technical information.  \\ \hline 
+
+        Customer \newline Memo & Current customers and the general public. \newline \newline Company employees. & Provide customers and employees with ``state of the union" information about the company. & 3 & Colorful and easy to read. \newline \newline  Different font weights and colors highlight important information and what it relates too.  \newline \newline Information is regarding new customers and new software functionality.  \\ \hline
+        
+        Code \newline Comments & Programmers and other employees working directly with the code. & Explicitly explain code parameters, usage, and how the code works. & 3 &  Conforms to internal commenting standards. \\ \hline
+    \end{tabularx}
+\end{table}
+
+
+\FloatBarrier
+
+\section{Secondary Documents}\label{sec_documents}
+ TODO[ Consider adding brief intro ]
+\subsection{Comments Are More Important Than Code}
+Communication inside code is unique to programming.  Programmers often talk of making code ``self-commenting,'' but this is nearly impossible to do.  Code is, by definition, complicated and difficult to understand.  Comments are an essential tool for communicating an algorithm's intent, usage, and implementation.  In other words, good comments explain how and why.
+
+Raskin argues that code comments are not only important, but essential for code to be reliable and maintainable.\cite{raskin} The problem is, enforcing strict commenting guidelines is cumbersome and limits the amount of code a programmer can write in a given unit of time.  Raskin argues that despite this, the benefits of rigorous comments far outweight the costs.  Rebuilding code with good documentation is far easier than without.  In fact, writing any code is far simpler if documention exists beforehand. \cite{raskin}
+
+\subsection{Agile Development}
+Agile software development is a software development that stresses working code over ideas, and effective person to person communication over documents and long response times.\cite{highsmith}  This section will focus on the communication aspects of Agile development, and how those concepts assist in creating effective and robust software. \\
+TODO[ flesh this out ]  
 
 \section{Conclusion}
-TODO
+
+TODO[ fill this out ]
 
 % Acknowledgments
 \begin{acks}
-The authors would like to thank Dr. Maura Turolla of Telecom
-Italia for providing specifications about the application scenario..
+The author would like to thank Frank Germano and Jon Zingale for their interviews.
 \end{acks}
 
 % Bibliography

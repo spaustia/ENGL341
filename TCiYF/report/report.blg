@@ -5,49 +5,62 @@ The style file: ACM-Reference-Format-Journals.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: acmsmall-sample-bibfile.bib
+Name 1 in "Payscale.com," has a comma at the end for entry payscale
+while executing---line 3199 of file ACM-Reference-Format-Journals.bst
+Name 1 in "Payscale.com," has a comma at the end for entry payscale
+while executing---line 3199 of file ACM-Reference-Format-Journals.bst
+Name 1 in "Payscale.com," has a comma at the end for entry payscale
+while executing---line 3199 of file ACM-Reference-Format-Journals.bst
+Name 1 in "Payscale.com," has a comma at the end for entry payscale
+while executing---line 3245 of file ACM-Reference-Format-Journals.bst
+Name 1 in "Payscale.com," has a comma at the end for entry payscale
+while executing---line 3245 of file ACM-Reference-Format-Journals.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--no journal in Hirata
-Warning--no number and no volume in Hirata
-Warning--require articleno with numpages field in Hirata
-You've used 1 entry,
+Name 1 in "Payscale.com," has a comma at the end for entry payscale
+while executing---line 3337 of file ACM-Reference-Format-Journals.bst
+Name 1 in "Payscale.com," has a comma at the end for entry payscale
+while executing---line 3337 of file ACM-Reference-Format-Journals.bst
+Name 1 in "Payscale.com," has a comma at the end for entry payscale
+while executing---line 3337 of file ACM-Reference-Format-Journals.bst
+You've used 3 entries,
             5290 wiz_defined-function locations,
-            1232 strings with 14464 characters,
-and the built_in function-call counts, 1091 in all, are:
-= -- 115
-> -- 38
+            1238 strings with 14554 characters,
+and the built_in function-call counts, 4239 in all, are:
+= -- 644
+> -- 78
 < -- 0
-+ -- 12
-- -- 16
-* -- 65
-:= -- 125
-add.period$ -- 5
-call.type$ -- 1
-change.case$ -- 6
-chr.to.int$ -- 1
-cite$ -- 4
-duplicate$ -- 84
-empty$ -- 61
-format.name$ -- 20
-if$ -- 227
++ -- 20
+- -- 147
+* -- 249
+:= -- 407
+add.period$ -- 15
+call.type$ -- 3
+change.case$ -- 16
+chr.to.int$ -- 3
+cite$ -- 3
+duplicate$ -- 215
+empty$ -- 157
+format.name$ -- 36
+if$ -- 919
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 45
-num.names$ -- 8
-pop$ -- 25
+missing$ -- 8
+newline$ -- 60
+num.names$ -- 24
+pop$ -- 73
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 31
 quote$ -- 0
-skip$ -- 32
+skip$ -- 68
 stack$ -- 0
-substring$ -- 93
-swap$ -- 10
-text.length$ -- 0
+substring$ -- 650
+swap$ -- 23
+text.length$ -- 231
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
-warning$ -- 3
-while$ -- 11
+type$ -- 42
+warning$ -- 0
+while$ -- 29
 width$ -- 0
-write$ -- 53
-(There were 3 warnings)
+write$ -- 86
+(There were 8 error messages)

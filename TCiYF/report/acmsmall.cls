@@ -2506,9 +2506,9 @@
 
 % Reference Format
 \gdef\formatline{{\em{\@journalNameShort\ }}\@acmVolume, \@acmNumber, Article~\@acmArticle\ (\monthWord{\@acmMonth}\ \@acmYear), \@acmPages.\\ % Need Journal Name in italics - in 'ACM Reference Format' before 1. INTRODUCTION - Gerry - March 2012
-{\tt DOI:}http://dx.doi.org/10.1145/\@doi} % Gerry March 2012 - on first page in 'ACM Reference Format'
+{\tt DOI:}http://dx.doi.org/00.000/\@doi} % Gerry March 2012 - on first page in 'ACM Reference Format'
 \gdef\copyrightline{\copyright\ \@acmYear\ \@cpyright\ \$\@acmPrice}
-\gdef\doiline{{\tt DOI:}http://dx.doi.org/10.1145/\@doi} % Gerry - March 2012 - beneath copyright line
+\gdef\doiline{{\tt DOI:}http://dx.doi.org/00.0000/\@doi} % Gerry - March 2012 - beneath copyright line
 
 % Page Style
 \mark{{}{}}

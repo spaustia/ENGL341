@@ -32,16 +32,32 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
-\bibitem[\protect\citeauthoryear{Hirata and Mizuno}{Hirata and Mizuno}{2011}]%
-        {Hirata}
-{Yukinao Hirata} {and} {Osamu Mizuno}. 2011.
-\newblock \showarticletitle{Do Comments Explain Codes Adequately?:
-  Investigation by Text Filtering}.
-\newblock  (2011), 242--245.
+\bibitem[\protect\citeauthoryear{Highsmith and Cockburn}{Highsmith and
+  Cockburn}{2001}]%
+        {highsmith}
+{Jim Highsmith} {and} {Alistair Cockburn}. 2001.
+\newblock \showarticletitle{Agile software development: The business of
+  innovation}.
+\newblock {\em Computer\/} {34}, 9 (2001), 120--127.
 \newblock
-\showISBNx{978-1-4503-0574-7}
-\showDOI{%
-\url{http://dx.doi.org/10.1145/1985441.1985482}}
+
+
+\bibitem[\protect\citeauthoryear{Payscale.com}{Payscale.com}{2015}]%
+        {payscale}
+{Payscale.com}. 2015.
+\newblock Popular Jobs for Computer Science Majors - College Salary Report.
+\newblock   (2015).
+\newblock
+\showURL{%
+\url{http://www.payscale.com/college-salary-report-2014/choosing-a-major/popular-jobs-by-major/computer-science-and-math}}
+
+
+\bibitem[\protect\citeauthoryear{Raskin}{Raskin}{2005}]%
+        {raskin}
+{Jef Raskin}. 2005.
+\newblock \showarticletitle{Comments are more important than code}.
+\newblock {\em ACM Queue\/} {3}, 2 (2005), 64.
+\newblock
 
 
 \end{thebibliography}
