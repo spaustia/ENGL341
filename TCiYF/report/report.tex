@@ -74,63 +74,69 @@ New Mexico Institute of Mining \& Technology, Socorro, NM.
 
 
 \section{Introduction}
-Computer Science (CS) is the study of computation and its applications.  CS majors are employed in a wide variety of positions post-graduation; prominent job titles include Application Developer, Information Technology Architect, and Systems Administrator.  \cite{payscale}
+Computer Science (CS) is the study of computation and its applications.  CS majors are employed in a wide variety of positions post-graduation; prominent job titles include Application Developer, Information Technology Architect, and Systems Administrator.\cite{payscale}
 
-The CS field contains a broad array of delivery mechanisms for technical information.  Many are comparable to other fields, including peer reviewed journals, memos, and technical reports.  In addition, it involves a number of communication tools that are unique such as issue tracking and code commenting. 
+Many technical communications in CS are comparable to other disciplines, including peer reviewed journals, memos, and technical reports.  In addition, it employs a number of communication tools that are unique.  Examples include issue tracking and code commenting. 
 
-To further explore technical communication in the field, the author interviewed a recent graduate and a seasoned professional programmer.  A discussion of these interviews can be found in [\ref{interviews}].  Three examples technical documents were gathered and will be discussed in [\ref{ex_documents}].  Two secondary sources regarding technical communication in the field were also found and will be discussed in [\ref{sec_documents}].
+To further explore technical communication in the field, a recent graduate and a seasoned professional programmer were interviewed.  A discussion of these interviews can be found in [\ref{interviews}].  Three examples technical documents were gathered and will be discussed in [\ref{ex_documents}].  Two secondary sources regarding technical communication were also found and will be discussed in [\ref{sec_documents}].
 
 % Head 1
 \section{Interview Analysis}\label{interviews}
-
+The following is brief summary of the information collected from the interviewees.
 % Head 2
 \subsection{Professional Programmer}
-Frank Germano, a professional programmer of 30 years, was a wealth of information regarding technical communication.  As a former vice president of a software engineering company, and current lead developer, he noted technical communication requirements may vary widely through one's career. 
+Frank Germano, a professional programmer of 30 years, was a wealth of information regarding technical communication.  As a former vice president of a software engineering firm and current lead developer, he noted technical communication requirements may vary widely through one's career. 
 
-As a lowly programmer, most technical communication involves code commenting, software documentation, and issue tracking (verbose descriptions of buggy code).  Lead developers and project managers serve as a bridge between programmers and non-technical management, and their communications reflect this.  They tend to handle state diagrams, flowcharts/UML diagrams, memos, and (sometimes) contracts.  He revealed that larger firms will typically include a Technical Writer in teams working on large project.  This person's sole responsibility is creating, editing and interpreting technical documention for the software the team is currently writing. 
+According to Frank, entry level programmers spend the least time on technical communication.  Code commenting, software documentation, and issue tracking (verbose descriptions of buggy code) are some examples of communication by programmers; they rarely interact with lay management.
 
-The bulk of a programmer's non-coding time is spent on internal communication, namely emails.
+Lead developers and project managers serve as a bridge between programmers and non-technical management, and their communications reflect this.  They tend to handle state diagrams, flowcharts/UML diagrams, memos, project presentations, and (sometimes) contracts.  He revealed that larger firms will typically include a Technical Writer in teams working on a significant project.  This person's sole responsibility is creating, editing and interpreting technical documention for the software the team is currently writing. 
 
-TODO[ Add time limitations, revision process ]
+The bulk of a programmer's non-coding time is spent on internal communication, namely emails.  As one advances in the corporate structure, more and more of a programmer's time is used in technical communication.  Frank spends around four hours a day on e-mails, issue tracking, memos, and software documentation (excluding code comments).  He reveals that the amount of time he spends coding is small, but as a vice president, was even smaller.
 
 \subsection{Recent Graduate}
-Jon Zingale is a recent graduate from The University of Texas as a math major with a CS minor.  He was hired by a security firm in Silicon Valley.  He reports that a large portion of his time is spent on communication; mostly emails, memos, and documenting security problems both in code and an internal issue registration system.  He rarely needs to convey technical information to non-technical personel, though he was recently asked to give a presentation to client regarding security holes discovered by his team.  \\
-TODO[ flesh this out ]
+Jon Zingale is a recent graduate from The University of Texas as a math major with a computer science minor.  He was hired by a security firm in Silicon Valley.  He reports that a large portion of his time is spent on communication; mostly emails, memos, and documenting security problems both in code and an internal issue registration system.
+
+He is in nearly constant contact with members of his team; they communicate through Skype, e-mails, and team meetings.  According the Jon, the ability to quickly communicate technical concepts on a whiteboard are essential to his position.  He rarely needs to convey technical information to non-technical personel, though he was recently asked to give a 20 minute presentation to a client regarding security holes discovered by his team.  
+
+He expects the amount of time he spends on communication to increase as he advances in his career.  He concedes that his communication requirements are different from many of his peers due to the nature of his employment, none of the courses he took as a student were germaine to this aspect of his job.
 
 \section{Example Documents}\label{ex_documents}
-Three example documents were obtained from Frank and Jon.  They are: an example of properly commented code, an example of issue documention, and a monthly memo sent to clients. \\
-TODO[ add margins to table, fix table placement, finish table cells ]
+Three example documents were obtained from Frank and Jon: an example of properly commented code, an example of issue tracking documention, and a monthly memo sent to clients.  An analysis of these documents is presented in Table \ref{table}\\
 
 \FloatBarrier
 
-{\renewcommand{\arraystretch}{2}
-\begin{table}[]
-    \centering
-    \begin{tabularx}{\textwidth}{ X | X | X | X | X }
+{\renewcommand{\arraystretch}{1.5}
+\begin{table}[!t]
+    \tbl{\textbf{Analysis of Sample Documents}\label{table}}
+    {\begin{tabularx}{\textwidth}{ | p{.6 in} | X | X | X | X |}
         \hline
-         Document Type & Audience  & Purpose & Style & Formating \\ \hline
+         \textbf{Document Type} & \textbf{Audience}  & \textbf{Purpose} & \textbf{Style} & \textbf{Formating} \\ \hline
 
-        Issue \newline Tracking & Management tracking progress on a bug fix. \newline \newline Internal programmers assigned to fix the issue.  & Provide specific technical and tracking information regarding a bug that needs to be fixed. & 3 & Conforms to internal specifications designed for clear communication of technical information.  \\ \hline 
+        Issue \newline Tracking & Management tracking progress on a bug fix. \newline \newline Internal programmers assigned to fix the issue.  & Provide specific technical and tracking information regarding a bug that needs to be fixed. & Sentences are terse and paragraphs are short.\newline \newline  Stars (*) are used to separate sections.  \newline \newline  & Conforms to internal specifications designed for clear communication of technical information.  \\ \hline 
 
-        Customer \newline Memo & Current customers and the general public. \newline \newline Company employees. & Provide customers and employees with ``state of the union" information about the company. & 3 & Colorful and easy to read. \newline \newline  Different font weights and colors highlight important information and what it relates too.  \newline \newline Information is regarding new customers and new software functionality.  \\ \hline
+        Customer \newline Memo & Current customers and the general public. \newline \newline Company employees. & Provide customers and employees with ``state of the union" information about the company. & Sentences are narrative and readable. \newline \newline There is an active voice and the present tense is used. & Colorful and easy to read. \newline \newline  Different font weights and colors highlight important information and what it relates too.  \newline \newline Information is regarding new customers and new software functionality.  \\ \hline
         
-        Code \newline Comments & Programmers and other employees working directly with the code. & Explicitly explain code parameters, usage, and how the code works. & 3 &  Conforms to internal commenting standards. \\ \hline
-    \end{tabularx}
+        Code \newline Comments & Programmers and other employees working directly with the code. & Explicitly explain code parameters, usage, and how the code works. & A variety of special characters are used as no ``markup" is allowed. \newline \newline  Comments are extremely terse.  Whitespace is used to great effect. &  Conforms to internal commenting standards. \\ \hline
+    \end{tabularx}}
 \end{table}
-
-
 \FloatBarrier
 
 \section{Secondary Documents}\label{sec_documents}
- TODO[ Consider adding brief intro ]
-\subsection{Comments Are More Important Than Code}
-Communication inside code is unique to programming.  Programmers often talk of making code ``self-commenting,'' but this is nearly impossible to do.  Code is, by definition, complicated and difficult to understand.  Comments are an essential tool for communicating an algorithm's intent, usage, and implementation.  In other words, good comments explain how and why.
+The following academic documents discuss two vital communication tools in computer science: software documention, and team communication.  In [\ref{comments}] the importance of software documentation is explored.  In [\ref{agile}], a software development process is discussed which stresses face-to-face communication amongst development team members.
 
-Raskin argues that code comments are not only important, but essential for code to be reliable and maintainable.\cite{raskin} The problem is, enforcing strict commenting guidelines is cumbersome and limits the amount of code a programmer can write in a given unit of time.  Raskin argues that despite this, the benefits of rigorous comments far outweight the costs.  Rebuilding code with good documentation is far easier than without.  In fact, writing any code is far simpler if documention exists beforehand. \cite{raskin}
+\subsection{Comments Are More Important Than Code}\label{comments}
+Comments inside code are a unique communication tool of programming.  Programmers often talk of making code ``self-commenting,'' but this is nearly impossible to do.  Code is, by definition, complicated and difficult to understand.  Comments and documentation are essential tools for communicating an algorithm's intent, usage, and implementation.  In other words, good comments explain how and most importantly, why.\cite{raskin}
 
-\subsection{Agile Development}
-Agile software development is a software development that stresses working code over ideas, and effective person to person communication over documents and long response times.\cite{highsmith}  This section will focus on the communication aspects of Agile development, and how those concepts assist in creating effective and robust software. \\
-TODO[ flesh this out ]  
+Raskin argues that code comments are not only important, but essential for code to be reliable and maintainable.  Enforcing strict commenting guidelines is cumbersome and limits the amount of code a programmer can write in a given unit of time.  Raskin argues that despite this, the benefits of rigorous comments far outweight the costs.  Rebuilding code with good documentation is far easier than without.  In fact, writing any code is far simpler if documention exists.  In addition, good documentation provides ``background and decision information that cannot be derived from code."   \cite{raskin}
+
+For these reasons, software documention should be a priority for all programmers.  
+
+\subsection{Agile Development}\label{agile}
+Agile software development (ASD) is a software development technique that stresses, among other things, effective person to person communication over documents and lengthy response times.\cite{highsmith}   
+
+Written documents and e-mails tend to lead to long response times. For software developement to be effective and responsive, these wait times must be minimized.  To effect this change, team collaboration should happen in person using whiteboards and face to face interaction.   In addition, a sponsor, customer representative, and user should be embedded within the development team.  Without their participation, software projects tend be slow in responding to changes in software requirements.\cite{highsmith}
+
+Software documentation should be generated as code is written.  Pre-planned documentation tends to lead to unresponsive code.  In the modern development world, plans tend to go out of date within days of being written.  Therefore, priorities must adjust according to changing requirements.  To this end, daily customer interaction and end user feedback is preferred over contract negotations and end-of-cycle user input. \cite{highsmith} 
 
 \section{Conclusion}
 

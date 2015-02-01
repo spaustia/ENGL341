@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="http://careers.stackoverflow.com/ad/companyjs?divs=careers1,careers2,hireme&_=1422656483605"></script>
+    
+    <title>ruby - Guard::RSpec error: No cmd option specified, unable to run specs - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico?v=038622610830">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=41f6e13ade69">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=ea71a5211a91">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Guard::RSpec error: No cmd option specified, unable to run specs">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="After upgrading to guard 2.6.1 guard stopped executing specs for changed file
+
+13:27:09 - INFO - LiveReload is waiting for a browser to connect. 
+13:27:09 - INFO - Guard::RSpec is running 
+13:27:09 - ">
+    <meta property="og:url" content="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs">
+    <link rel="canonical" href="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow.html">
+
+    
+    
+    <script async="" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/quant.js"></script><script async="" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/beacon.js"></script><script async="" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/analytics.js"></script><script src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/jquery.min.js"></script>
+    <script src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/stub.en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/all.css">
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;Guard::RSpec error: No cmd option specified, unable to run specs&#39;" href="http://stackoverflow.com/feeds/question/25034530">
+    <meta name="twitter:app:country" content="US">
+    <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+    <meta name="twitter:app:id:iphone" content="871299723">
+    <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs">
+    <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+    <meta name="twitter:app:id:ipad" content="871299723">
+    <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs">
+    <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+    <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs">
+    <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+    <script>
+        
+        StackExchange.ready(function () {
+                
+                StackExchange.using("snippets", function () {
+                    StackExchange.snippets.initSnippetRenderer();
+                });
+                
+
+            StackExchange.using("postValidation", function () {
+                StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+            });
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:1,shownCommentCount:1,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:25034530});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '25034530');
+            
+                    });
+    </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1422656481,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":true,"domain":"stacksnippets.net"},"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"nonAsciiTags":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"6951f609a3fee279507d442d44fb9828","isAnonymous":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"e6b2450d6ddb","js/moderator.en.js":"f87d100cac03","js/full-anon.en.js":"2935e3397ed1","js/full.en.js":"1be7be1157a9","js/wmd.en.js":"36f8675b5c6d","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"0c842be285f8","js/help.en.js":"b5f40fd81205","js/tageditor.en.js":"a6af4d441c80","js/tageditornew.en.js":"bbd0ab7faa20","js/inline-tag-editing.en.js":"21223186b436","js/revisions.en.js":"6c7265ea9fa1","js/review.en.js":"5e6326ad421f","js/tagsuggestions.en.js":"d1ff9b84abe5","js/post-validation.en.js":"b6cf54b94be5","js/explore-qlist.en.js":"4e6f969d97ee","js/events.en.js":"946795a2a57e","js/keyboard-shortcuts.en.js":"5051ace87111","js/external-editor.en.js":"a9a74e04c9b0","js/external-editor.en.js":"a9a74e04c9b0","js/snippet-javascript.en.js":"b37f4c91bf3b","js/snippet-javascript-codemirror.en.js":"f59f553c29bd"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    
+    
+<script async="" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/full-anon.en.js"></script><script async="" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/snippet-javascript.en.js"></script><script async="" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/post-validation.en.js"></script><script async="" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/prettify-full.en.js"></script><script async="" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/external-editor.en.js"></script><link href="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/company.min.css" type="text/css" rel="stylesheet"></head>
+<body class="question-page new-topbar">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="http://stackoverflow.com/">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+            <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+                    <a href="http://blog.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:7 })">blog</a>
+            </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                </li>
+                            <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    <a class="site-link js-gps-track" href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&utm_medium=site-ui&utm_campaign=multicollider" data-gps-track="site_switcher.click({ item_type:9 })">
+                        <div class="site-icon favicon favicon-careers" title="Stack Overflow Careers"></div>
+                        Stack Overflow Careers
+                    </a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f25034530%2fguardrspec-error-no-cmd-option-specified-unable-to-run-specs" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f25034530%2fguardrspec-error-no-cmd-option-specified-unable-to-run-specs" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a></h3>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+
+            <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 134 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                    <span class="topbar-menu-links">
+                            <a href="https://stackoverflow.com/users/signup?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f25034530%2fguardrspec-error-no-cmd-option-specified-unable-to-run-specs" class="login-link">sign up</a>
+                            <a href="https://stackoverflow.com/users/login?returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f25034530%2fguardrspec-error-no-cmd-option-specified-unable-to-run-specs" class="login-link">log in</a>
+                            <a href="http://stackoverflow.com/tour">tour</a>
+
+                            <a href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                            <a href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&utm_medium=site-ui&utm_campaign=anon-topbar">stack overflow careers</a>
+                    </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="search" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="http://stackoverflow.com/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="http://stackoverflow.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://stackoverflow.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://stackoverflow.com/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://stackoverflow.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+	<link itemprop="image" href="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/apple-touch-icon.png">
+			<!--googleoff: all-->
+
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+            <a href="http://stackoverflow.com/tour" id="tell-me-more" class="button">Take the 2-minute tour</a>
+            <span id="close"><a title="click to dismiss">×</a></span>
+        </span>
+        <div id="blurb">
+            Stack Overflow is a question and answer site for professional and enthusiast programmers. It's 100% free, no registration required.
+        </div>        
+    </div>
+    <script>
+        $('#tell-me-more').click(function () {
+            var clickSource = $("body").attr("class") + '-mini';
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("question-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+            }
+
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("aboutpage.click", { aboutclick_location: clickSource } , true);
+            });
+        });
+        $('#herobox-mini #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "close" }, true);
+            });
+            $.cookie("hero", "none", { path: "/", expires: 365 });
+            var $hero = $("#herobox-mini");
+            $hero.slideUp('fast', function () { $hero.remove(); });
+            return false;
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+			<h1 itemprop="name"><a href="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow.html" class="question-hyperlink">Guard::RSpec error: No cmd option specified, unable to run specs</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="25034530" id="question">
+
+    <div class="everyonelovesstackoverflow" id="careers1">
+        </div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="25034530">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">9</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+    
+    <a class="star-off" href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>1</b></div>   
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+        <p>After upgrading to guard 2.6.1 guard stopped executing specs for changed file</p>
+
+<pre class="lang-rb prettyprint prettyprinted"><code><span class="lit">13</span><span class="pun">:</span><span class="lit">27</span><span class="pun">:</span><span class="lit">09</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> INFO </span><span class="pun">-</span><span class="pln"> </span><span class="typ">LiveReload</span><span class="pln"> is waiting </span><span class="kwd">for</span><span class="pln"> a browser to connect</span><span class="pun">.</span><span class="pln"> 
+</span><span class="lit">13</span><span class="pun">:</span><span class="lit">27</span><span class="pun">:</span><span class="lit">09</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> INFO </span><span class="pun">-</span><span class="pln"> </span><span class="typ">Guard</span><span class="pun">::</span><span class="typ">RSpec</span><span class="pln"> is running 
+</span><span class="lit">13</span><span class="pun">:</span><span class="lit">27</span><span class="pun">:</span><span class="lit">09</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> INFO </span><span class="pun">-</span><span class="pln"> </span><span class="typ">Guard</span><span class="pln"> is now watching at </span><span class="str">'[path to project]'</span><span class="pln">
+</span><span class="lit">13</span><span class="pun">:</span><span class="lit">27</span><span class="pun">:</span><span class="lit">13</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> INFO </span><span class="pun">-</span><span class="pln"> </span><span class="typ">Running</span><span class="pun">:</span><span class="pln"> spec</span><span class="pun">/</span><span class="pln">models</span><span class="pun">/[</span><span class="pln">some_model</span><span class="pun">]</span><span class="pln">_spec</span><span class="pun">.</span><span class="pln">rb
+</span><span class="lit">13</span><span class="pun">:</span><span class="lit">27</span><span class="pun">:</span><span class="lit">13</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> ERROR </span><span class="pun">-</span><span class="pln"> </span><span class="typ">No</span><span class="pln"> cmd option specified</span><span class="pun">,</span><span class="pln"> unable to run specs</span><span class="pun">!</span></code></pre>
+
+<p>My bundle is</p>
+
+<pre class="lang-rb prettyprint prettyprinted"><code><span class="typ">Using</span><span class="pln"> guard </span><span class="pun">(</span><span class="lit">2.6</span><span class="pun">.</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Using</span><span class="pln"> guard</span><span class="pun">-</span><span class="pln">livereload </span><span class="pun">(</span><span class="lit">2.3</span><span class="pun">.</span><span class="lit">0</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Using</span><span class="pln"> guard</span><span class="pun">-</span><span class="pln">rails </span><span class="pun">(</span><span class="lit">0.5</span><span class="pun">.</span><span class="lit">3</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Using</span><span class="pln"> guard</span><span class="pun">-</span><span class="pln">rspec </span><span class="pun">(</span><span class="lit">4.3</span><span class="pun">.</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+
+</span><span class="typ">Using</span><span class="pln"> rspec</span><span class="pun">-</span><span class="pln">core </span><span class="pun">(</span><span class="lit">2.14</span><span class="pun">.</span><span class="lit">8</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Using</span><span class="pln"> rspec</span><span class="pun">-</span><span class="pln">expectations </span><span class="pun">(</span><span class="lit">2.14</span><span class="pun">.</span><span class="lit">5</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Using</span><span class="pln"> rspec</span><span class="pun">-</span><span class="pln">mocks </span><span class="pun">(</span><span class="lit">2.14</span><span class="pun">.</span><span class="lit">6</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Using</span><span class="pln"> rspec </span><span class="pun">(</span><span class="lit">2.14</span><span class="pun">.</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Using</span><span class="pln"> rspec</span><span class="pun">-</span><span class="pln">rails </span><span class="pun">(</span><span class="lit">2.14</span><span class="pun">.</span><span class="lit">2</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">Using</span><span class="pln"> rails </span><span class="pun">(</span><span class="lit">4.0</span><span class="pun">.</span><span class="lit">4</span><span class="pun">)</span></code></pre>
+
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/ruby" class="post-tag js-gps-track" title="show questions tagged &#39;ruby&#39;" rel="tag">ruby</a> <a href="http://stackoverflow.com/questions/tagged/ruby-on-rails-4" class="post-tag js-gps-track" title="show questions tagged &#39;ruby-on-rails-4&#39;" rel="tag">ruby-on-rails-4</a> <a href="http://stackoverflow.com/questions/tagged/rspec" class="post-tag js-gps-track" title="show questions tagged &#39;rspec&#39;" rel="tag">rspec</a> <a href="http://stackoverflow.com/questions/tagged/guard" class="post-tag js-gps-track" title="show questions tagged &#39;guard&#39;" rel="tag">guard</a> <a href="http://stackoverflow.com/questions/tagged/spec" class="post-tag js-gps-track" title="show questions tagged &#39;spec&#39;" rel="tag">spec</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/25034530" title="short permalink to this question" class="short-link" id="link-post-25034530">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/25034530/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/25034530/revisions" title="show all edits to this post">edited <span title="2014-12-13 13:25:24Z" class="relativetime">Dec 13 '14 at 13:25</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/462015/arturo-herrero"><div class="gravatar-wrapper-32"><img src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/e98ec4b9f3be7294da5328857b07de49" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/462015/arturo-herrero">Arturo Herrero</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">4,608</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="19 silver badges"><span class="badge2"></span><span class="badgecount">19</span></span><span title="45 bronze badges"><span class="badge3"></span><span class="badgecount">45</span></span>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info user-hover">
+    <div class="user-action-time">
+        asked <span title="2014-07-30 10:29:32Z" class="relativetime">Jul 30 '14 at 10:29</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/781048/serge-seletskyy"><div class="gravatar-wrapper-32"><img src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/0830b2f29bc481d25f1d6e5a620423f1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/781048/serge-seletskyy">Serge Seletskyy</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">2,704</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="21 silver badges"><span class="badge2"></span><span class="badgecount">21</span></span><span title="36 bronze badges"><span class="badge3"></span><span class="badgecount">36</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-25034530" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-39057874" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Arturo thank you for adding ruby tag</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/781048/serge-seletskyy" title="2704 reputation" class="comment-user owner">Serge Seletskyy</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#comment39057874_25034530"><span title="2014-08-02 21:59:27Z" class="relativetime-clean">Aug 2 '14 at 21:59</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-25034530" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#" onclick=""></a>
+            </div>
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								2 Answers
+                                <span style="display:none;" itemprop="answerCount">2</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+        <a href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="25035110"></a>
+<div id="answer-25035110" class="answer accepted-answer" data-answerid="25035110" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="25035110">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">30</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You need to update your <code>Guardfile</code> and add the <a href="https://github.com/guard/guard-rspec#options"><code>cmd</code> option</a>.</p>
+
+<blockquote>
+  <p>Guard::RSpec 4.0 now uses a simpler approach with the new <code>cmd</code> option
+  that let you precisely define which rspec command will be launched on
+  each run. <strong>This option is required</strong> due to the number of different ways
+  possible to invoke rspec, the template now includes a default that
+  should work for most applications but may not be optimal for all.</p>
+</blockquote>
+
+<p>This is how looks my Guardfile:</p>
+
+<pre class="lang-rb prettyprint prettyprinted"><code><span class="pln">guard </span><span class="pun">:</span><span class="pln">rspec</span><span class="pun">,</span><span class="pln"> cmd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"bundle exec rspec"</span><span class="pln"> </span><span class="kwd">do</span><span class="pln">
+  </span><span class="com"># ...</span><span class="pln">
+</span><span class="kwd">end</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/25035110" title="short permalink to this answer" class="short-link" id="link-post-25035110">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/25035110/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2014-07-30 11:00:20Z" class="relativetime">Jul 30 '14 at 11:00</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/462015/arturo-herrero"><div class="gravatar-wrapper-32"><img src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/e98ec4b9f3be7294da5328857b07de49" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/462015/arturo-herrero">Arturo Herrero</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">4,608</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="19 silver badges"><span class="badge2"></span><span class="badgecount">19</span></span><span title="45 bronze badges"><span class="badge3"></span><span class="badgecount">45</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-25035110" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-38939602" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Arturo, thanks a lot, works like a charm</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/781048/serge-seletskyy" title="2704 reputation" class="comment-user owner">Serge Seletskyy</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#comment38939602_25035110"><span title="2014-07-30 12:38:13Z" class="relativetime-clean">Jul 30 '14 at 12:38</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-25035110" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+<div class="newsletter-anon">
+    <img src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/apple-touch-icon.png" class="newsletter-logo">
+    <div class="newsletter-container">
+        <h2>Did you find this question interesting? Try our newsletter</h2>
+        <p class="newsletter-description">
+            Sign up for our newsletter and get our top new questions delivered to your inbox (<a href="http://stackexchange.com/newsletters/newsletter?site=stackoverflow.com" id="newsletter-preview">see an example</a>).
+        </p>
+        <form id="anon-newsletter-form" data-error="There was a problem signing up for the newsletter. Please try again later.">
+            <input type="email" id="newsletter-email-input" placeholder="email address" title="your email address">
+            <input type="submit" value="Subscribe" id="newsletter-email-submit">
+        </form>
+        <div style="margin-top: 10px; float:right;" class="dno cbt newsletter-status-confirmed">
+            <b>Subscribed!</b>
+        </div>
+        <div style="margin-top: 10px; float:right;" class="dno cbt newsletter-status-unconfirmed">
+            <b>Success!</b> Please click the link in the confirmation email to activate your subscription.
+        </div>
+    </div>
+</div>
+
+<script>
+    StackExchange.ready(function () {
+        StackExchange.newsletterAd.init();
+    });
+
+    $('#anon-newsletter-form').submit(function () {
+        var $form = $(this);
+        var $input = $form.find('#newsletter-email-input');
+        var $submit = $form.find('#newsletter-email-submit');
+        var $container = $form.closest('.newsletter-container');
+
+        var email = $.trim($input.val());
+        if (email.length == 0) {
+            return false;
+        }
+        StackExchange.helpers.addSpinner($form);
+
+        $.ajax({
+            url: '/newsletter/signup/anon',
+            type: 'POST',
+            dataType: 'json',
+            data: { email: email, viaAnonNewsletterAd: true },
+            success: function (data) {
+                if (!data.error && (data.status == 'confirmed' || data.status == 'unconfirmed')) {
+                    $input.attr('disabled', true);
+                    $submit.remove();
+                    $container.find('.newsletter-status-' + data.status).show();
+                }
+                else {
+                    $container.showErrorMessage(data.error || $form.data('error'));
+                }
+            },
+            error: function () {
+                $container.showErrorMessage($form.data('error'));
+            },
+            complete: function () {
+                StackExchange.helpers.removeSpinner($form);
+            }
+        });
+
+        return false;
+    });
+</script>
+  
+<a name="25037175"></a>
+<div id="answer-25037175" class="answer" data-answerid="25037175" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="25037175">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Alternative answer in case of using <a href="https://github.com/burke/zeus" rel="nofollow">Zeus</a> to speed up test execution</p>
+
+<pre class="lang-rb prettyprint prettyprinted"><code><span class="pln">guard </span><span class="str">'rspec'</span><span class="pun">,</span><span class="pln"> cmd</span><span class="pun">:</span><span class="pln"> </span><span class="str">"zeus test"</span><span class="pln"> </span><span class="kwd">do</span><span class="pln">
+  </span><span class="com">#</span><span class="pln">
+</span><span class="kwd">end</span></code></pre>
+
+<p>Make sure you start <strong>Zeus</strong> before using <strong>Guard</strong></p>
+
+<pre class="lang-rb prettyprint prettyprinted"><code><span class="pun">&gt;</span><span class="pln"> zeus start</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/25037175" title="short permalink to this answer" class="short-link" id="link-post-25037175">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/25037175/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/25037175/revisions" title="show all edits to this post">edited <span title="2014-09-16 21:30:14Z" class="relativetime">Sep 16 '14 at 21:30</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/26679/gef"><div class="gravatar-wrapper-32"><img src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/6bc60ddba360cb08929e4a23ce1337d3" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/26679/gef">gef</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">3,455</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="20 silver badges"><span class="badge2"></span><span class="badgecount">20</span></span><span title="33 bronze badges"><span class="badge3"></span><span class="badgecount">33</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature owner">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2014-07-30 12:43:29Z" class="relativetime">Jul 30 '14 at 12:43</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/781048/serge-seletskyy"><div class="gravatar-wrapper-32"><img src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/0830b2f29bc481d25f1d6e5a620423f1" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/781048/serge-seletskyy">Serge Seletskyy</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">2,704</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="21 silver badges"><span class="badge2"></span><span class="badgecount">21</span></span><span title="36 bronze badges"><span class="badge3"></span><span class="badgecount">36</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-25037175" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+            <div id="comments-link-25037175" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span><a class="js-show-link comments-link dno" title="expand to show all comments on this post, or add one of your own" href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#" onclick=""></a>
+            </div>
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="http://stackoverflow.com/questions/25034530/answer/submit" method="post" class="post-form">
+						    <input type="hidden" id="post-id" value="25034530">
+                            <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false">
+                            <input type="hidden" name="referrer" value="https://www.google.com/">
+							<h2 class="space">Your Answer</h2>
+
+
+
+            <script>
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        </script>
+    
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+            // Have to fire editor after snippets, if snippets enabled
+            if (StackExchange.options.snippets.enabled) {
+                StackExchange.using("snippets", function() {
+                    createEditor();
+                });
+            }
+            else {
+                createEditor();
+            }
+        });
+
+        function createEditor() {
+            prepareEditor({
+                heartbeatType: 'answer',
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                ,immediatelyShowMarkdownHelp:true
+                });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="6951f609a3fee279507d442d44fb9828">
+        <input id="author" name="author" type="text">
+    </div>
+</div>
+							<div style="position: relative;">
+								
+            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f25034530%2fguardrspec-error-no-cmd-option-specified-unable-to-run-specs%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Stack Exchange</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid">
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false">
+                    <input type="hidden" name="use-google" class="use-google" value="false">
+                    <input type="button" class="submit-openid" value="Submit" style="display:none">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown">
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', '%2fquestions%2f25034530%2fguardrspec-error-no-cmd-option-specified-unable-to-run-specs%23new-answer');
+                    }
+                );
+            </script>
+            <noscript>
+                        &lt;h3&gt;Post as a guest&lt;/h3&gt;
+    &lt;div class="form-item"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+                    &lt;td class="vm"&gt;
+                &lt;div&gt;
+                    &lt;label for="display-name"&gt;Name&lt;/label&gt;
+                    &lt;input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105"&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label for="m-address"&gt;Email&lt;/label&gt;
+                    &lt;input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" /&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+            </noscript>
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#" class="discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/ruby" class="post-tag" title="show questions tagged &#39;ruby&#39;" rel="tag">ruby</a> <a href="http://stackoverflow.com/questions/tagged/ruby-on-rails-4" class="post-tag" title="show questions tagged &#39;ruby-on-rails-4&#39;" rel="tag">ruby-on-rails-4</a> <a href="http://stackoverflow.com/questions/tagged/rspec" class="post-tag" title="show questions tagged &#39;rspec&#39;" rel="tag">rspec</a> <a href="http://stackoverflow.com/questions/tagged/guard" class="post-tag" title="show questions tagged &#39;guard&#39;" rel="tag">guard</a> <a href="http://stackoverflow.com/questions/tagged/spec" class="post-tag" title="show questions tagged &#39;spec&#39;" rel="tag">spec</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2014-07-30 10:29:32Z"><b>6 months ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>1177 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs?lastactivity" class="lastactivity-link" title="2014-12-13 13:25:24Z">1 month ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+						
+			<div class="everyonelovesstackoverflow" id="careers2">
+        </div>
+        <div id="hireme">
+            <script>
+window.careers_adurl="//careers.stackoverflow.com/ad/companyjs",window.careers_cssurl="//cdn-careers.sstatic.net/careers/gethired/company.min.css?v=cace662f1716",window.careers_cssurl2="//cdn-careers.sstatic.net/careers/gethired/sidebar.min.css?v=19f7c7921388",window.careers_adselector="#hireme",StackExchange.ready(function(){$.ajax({url:"//cdn-careers.sstatic.net/careers/gethired/company-loader.min.js?v=d38fcbba30f7",dataType:"script",cache:!1})});            </script>
+            
+        </div>
+			<div class="module" id="chat-feature">
+    
+
+    
+<h4><a href="http://chat.stackoverflow.com/" id="h-chat-link" title="103 users active in 37 rooms the last 60 minutes">103 People Chatting</a></h4>
+
+<div class="related" id="ad502-rooms"><div class="ad502-room"><h3 class="ad502-room-h3"><span class="ad502-room-title" title="JavaScript"><a href="http://chat.stackoverflow.com/rooms/17">JavaScript</a></span></h3><span title="2015-01-30 20:48:39Z" class="ad502-last-message">1 hour ago - <a href="http://chat.stackoverflow.com/users/263525">dystroy</a></span><br><div class="ad502-users"><a href="http://chat.stackoverflow.com/users/263525"><img height="23" width="23" title="dystroy: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/ec289925069b35f18f1230b90dc654e5"></a><a href="http://chat.stackoverflow.com/users/1503615"><img height="23" width="23" title="argentum47: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/XpUBC.jpg"></a><a href="http://chat.stackoverflow.com/users/1078067"><img height="23" width="23" title="copy: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/q3TEx.png"></a><a href="http://chat.stackoverflow.com/users/1596138"><img height="23" width="23" title="Jhawins: 2 hours ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/244f50b31987c6aa4113a176ef8c4027"></a><a href="http://chat.stackoverflow.com/users/1348195"><img height="23" width="23" title="Benjamin Gruenbaum: 2 hours ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/f6dca2295546af21e1cde8e68f2d49bd"></a><a href="http://chat.stackoverflow.com/users/829835"><img height="23" width="23" title="rlemon: 2 hours ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/bge3y.png"></a><a href="http://chat.stackoverflow.com/users/322395"><img height="23" width="23" title="Loktar: 2 hours ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/ToSp3.png"></a></div></div><div class="ad502-room"><h3 class="ad502-room-h3"><span class="ad502-room-title" title="Lounge&lt;C++&gt;"><a href="http://chat.stackoverflow.com/rooms/10">Lounge&lt;C++&gt;</a></span></h3><span title="2015-01-30 20:47:38Z" class="ad502-last-message">1 hour ago - <a href="http://chat.stackoverflow.com/users/932887">Alex M.</a></span><br><div class="ad502-users"><a href="http://chat.stackoverflow.com/users/932887"><img height="23" width="23" title="Alex M.: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/6KUp0.png"></a><a href="http://chat.stackoverflow.com/users/75889"><img height="23" width="23" title="StackedCrooked: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/37aa3ec65ec47c5a3f9e2a80534837f3"></a><a href="http://chat.stackoverflow.com/users/500104"><img height="23" width="23" title="Xeo: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/eb538603c2b80ea703e92abf5b45c791"></a><a href="http://chat.stackoverflow.com/users/174614"><img height="23" width="23" title="Tony The Lion: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/ca9a84fecd3f2fea333e8a1ef16edf98"></a><a href="http://chat.stackoverflow.com/users/298661"><img height="23" width="23" title="Puppy: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/3445f56229632874a44596385ed6d40c"></a><a href="http://chat.stackoverflow.com/users/1004211"><img height="23" width="23" title="Pris: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/490a33dc2429cbd669bd4471d7aedc1d"></a><a href="http://chat.stackoverflow.com/users/1804599"><img height="23" width="23" title="рытфолд: 1 hour ago" src="./ruby - Guard  RSpec error  No cmd option specified, unable to run specs - Stack Overflow_files/44814a231040ea4f568c0bb2e3b7c223"></a></div></div></div>
+<script>
+// <!--
+    StackExchange.ready(
+    function () {
+        var options = {
+            chatUrl: 'http://chat.stackoverflow.com',
+            reloadUrl: '/api/recent-chat',
+            preloadData: {"activeUsers":103,"activeRooms":37,"rooms":[{"name":"JavaScript","id":17,"lastPost":1422650919,"posts":2408439,"users":[{"name":"dystroy","id":263525,"emailhash":"ec289925069b35f18f1230b90dc654e5","lastPost":1422650919},{"name":"argentum47","id":1503615,"emailhash":"!http://i.stack.imgur.com/XpUBC.jpg?s=128\u0026g=1","lastPost":1422650870},{"name":"copy","id":1078067,"emailhash":"!http://i.stack.imgur.com/q3TEx.png?s=128\u0026g=1","lastPost":1422650769},{"name":"Jhawins","id":1596138,"emailhash":"244f50b31987c6aa4113a176ef8c4027","lastPost":1422648710},{"name":"Benjamin Gruenbaum","id":1348195,"emailhash":"f6dca2295546af21e1cde8e68f2d49bd","lastPost":1422648691},{"name":"rlemon","id":829835,"emailhash":"!http://i.stack.imgur.com/bge3y.png?s=128\u0026g=1","lastPost":1422648679},{"name":"Loktar","id":322395,"emailhash":"!http://i.stack.imgur.com/ToSp3.png?s=128\u0026g=1","lastPost":1422647352}],"messages":[{"date":1422650919,"user":"dystroy","userid":263525}],"singleImage":false,"tags":["ecmascript","es6","javascript"]},{"name":"Lounge\u003cC++\u003e","id":10,"lastPost":1422650858,"posts":3376744,"users":[{"name":"Alex M.","id":932887,"emailhash":"!http://i.stack.imgur.com/6KUp0.png?s=128\u0026g=1","lastPost":1422650858},{"name":"StackedCrooked","id":75889,"emailhash":"37aa3ec65ec47c5a3f9e2a80534837f3","lastPost":1422650769},{"name":"Xeo","id":500104,"emailhash":"eb538603c2b80ea703e92abf5b45c791","lastPost":1422650741},{"name":"Tony The Lion","id":174614,"emailhash":"ca9a84fecd3f2fea333e8a1ef16edf98","lastPost":1422650725},{"name":"Puppy","id":298661,"emailhash":"3445f56229632874a44596385ed6d40c","lastPost":1422650653},{"name":"Pris","id":1004211,"emailhash":"490a33dc2429cbd669bd4471d7aedc1d","lastPost":1422650636},{"name":"рытфолд","id":1804599,"emailhash":"44814a231040ea4f568c0bb2e3b7c223","lastPost":1422650600}],"messages":[{"date":1422650858,"user":"Alex M.","userid":932887}],"singleImage":false,"tags":["c++","c++11","c++14","c++-faq"]}]} 
+        };
+
+        StackExchange.chatAd.init(options);
+    });
+// -->
+</script>
+
+</div>  
+    
+            
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/10350365?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">4
+    </div>
+</a><a href="http://stackoverflow.com/questions/10350365/no-rspec-output-in-console-for-guard-watched-file?rq=1" class="question-hyperlink">No rspec output in console for guard watched file</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/15191060?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/15191060/why-guard-rspec-stops-working-on-jruby?rq=1" class="question-hyperlink">Why Guard (rspec) stops working on jruby</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/16360618?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/16360618/why-does-guard-run-all-my-rspec-specs-on-every-change?rq=1" class="question-hyperlink">Why does Guard run ALL my RSpec specs on every change?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/19585567?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">4
+    </div>
+</a><a href="http://stackoverflow.com/questions/19585567/in-rails-im-getting-this-error-from-guard-saying-i-have-to-update-to-the-new-cm?rq=1" class="question-hyperlink">In Rails Im getting this error from Guard saying I have to update to the new :cmd syntax</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/20740432?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/20740432/guard-rspec-not-doing-anything-when-specs-or-models-are-saved?rq=1" class="question-hyperlink">guard-rspec not doing anything when specs or models are saved</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/21215357?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">3
+    </div>
+</a><a href="http://stackoverflow.com/questions/21215357/guard-rspec-cli-option-is-deprecated-change-to-cmd-option?rq=1" class="question-hyperlink">Guard Rspec :cli option is deprecated, change to :cmd option</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/22134969?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/22134969/guard-spork-slowing-down-tests-not-receiving-drb-option?rq=1" class="question-hyperlink">Guard + Spork slowing down tests, not receiving --drb option</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/22548518?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/22548518/guard-rspec-doesnt-run-specs?rq=1" class="question-hyperlink">Guard rspec doesn't run specs</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/22993308?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/22993308/atom-causing-guard-to-run-with-every-window-change?rq=1" class="question-hyperlink">Atom causing Guard to run with every window change</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/23166146?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/23166146/rails-guard-say-rspec-results-failed-and-one-empty-spec-give-dependency-errors?rq=1" class="question-hyperlink">Rails Guard say 'Rspec results failed' and one empty spec give dependency errors</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/9466/what-determines-whether-or-not-tribes-will-form-into-larger-groups" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What determines whether or not tribes will form into larger groups?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/28235805/type-casting-in-c" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Type-casting in C++
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/80464/were-there-any-fat-people-in-the-matrix" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Were there any fat people in the Matrix?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/195248/co-hausdorffification" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Co-Hausdorffification
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/48415/i-am-hurting-in-the-meaning-of-i-am-hurt-why" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    "I am hurting" in the meaning of "I am hurt"? Why?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="http://physics.stackexchange.com/questions/162184/what-is-the-speed-of-sound-in-space" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the speed of sound in space?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-biology" title="Biology Stack Exchange"></div><a href="http://biology.stackexchange.com/questions/28173/why-dont-breast-enlargements-leave-any-marks-of-surgery-on-breasts" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:375 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why don't breast enlargements leave any marks of surgery on breasts?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/225753/how-to-put-equation-side-by-side-equations" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to put equation side by side equations?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-lifehacks" title="Lifehacks Stack Exchange"></div><a href="http://lifehacks.stackexchange.com/questions/4032/how-to-protect-computer-from-accidentally-pressing-the-power-button" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:593 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to protect computer from accidentally pressing the power button?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/151713/how-to-compute-the-effective-voltage-across-a-dc-motor-driven-by-a-pulse-train" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to compute the effective voltage across a DC motor driven by a pulse train?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/56041/is-it-common-for-dd-characters-be-moved-to-or-reused-in-different-dms-campaign" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it common for D&amp;D characters be moved to or reused in different DMs' campaigns?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/42740/traveling-across-usa-where-to-find-microwave" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    traveling across USA -- where to find microwave
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-diy" title="Home Improvement Stack Exchange"></div><a href="http://diy.stackexchange.com/questions/58698/how-critical-are-distances-between-studs" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:73 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    how critical are distances between studs?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-parenting" title="Parenting Stack Exchange"></div><a href="http://parenting.stackexchange.com/questions/18489/learning-to-play-an-instrument-should-we-insist-that-the-child-practices-each-d" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:228 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Learning to play an instrument: Should we insist that the child practices each day
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/42652/tipping-in-europe-when-paying-by-credit-card" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Tipping in Europe when paying by credit card?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/80366/why-didnt-the-machine-kill-neo-after-he-was-ejected" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why didn't the machine kill Neo after he was ejected?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="http://mathematica.stackexchange.com/questions/72893/given-a-list-made-up-of-subsets-of-an-alphabet-how-can-i-use-associations-to-cr" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Given a list made up of subsets of an alphabet, how can I use associations to create a Boolean dictionary of the given list
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-gaming" title="Arqade"></div><a href="http://gaming.stackexchange.com/questions/203412/can-i-transfer-minecraft-from-a-computer-to-ios" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:41 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can I transfer Minecraft from a computer to iOS?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/9371/how-can-i-brighten-the-night-sky-just-a-bit" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I brighten the night sky (just a bit)?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/12205/how-do-pilots-stay-disciplined-and-use-checklists-even-after-they-have-become-r" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How do pilots stay disciplined and use checklists, even after they have become routine?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/56077/can-vicious-mockery-hit-a-target-behind-full-cover" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can Vicious Mockery hit a target behind full cover?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/56017/it-seems-like-every-skill-check-should-always-be-made-with-advantage-due-to-the" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    It seems like every skill check should always be made with advantage due to the 'Working Together' rules. Is this accurate?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/28238467/how-to-extend-behavior-to-vectors-that-include-nas" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to extend `==` behavior to vectors that include NAs?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-chemistry" title="Chemistry Stack Exchange"></div><a href="http://chemistry.stackexchange.com/questions/24383/why-is-pyridine-used-when-making-tosyl-esters-from-alcohols" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:431 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why is pyridine used when making tosyl esters from alcohols?
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="http://stackoverflow.com/questions/25034530/guardrspec-error-no-cmd-option-specified-unable-to-run-specs#" class="show-more js-show-more js-gps-track" data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/25034530" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/25034530/ivc/7fbb');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/25034530/ivc/7fbb" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">lang-rb</div></div>
+
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="http://blog.stackoverflow.com/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com/" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems.">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="Information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (14)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (10)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com/">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo © 2015 stack exchange inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a>                   with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2015.1.30.2261
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-1');        
+        
+        ga('set', 'dimension2', '|ruby|ruby-on-rails-4|rspec|guard|spec|');         
+        ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>        
+    
+    
+</body></html>
