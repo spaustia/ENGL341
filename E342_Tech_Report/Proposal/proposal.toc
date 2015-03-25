@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Project Summary}{1}
+\contentsline {section}{\numberline {2}Tentative Outline}{1}
+\contentsline {section}{\numberline {3}Outcome}{2}
+\contentsline {section}{\numberline {4}Primary Research Strategies}{2}
+\contentsline {section}{\numberline {5}Secondary Research Strategies}{2}
+\contentsline {section}{\numberline {6}Timeline}{2}
+\contentsline {section}{\numberline {7}Questions and Concerns}{2}

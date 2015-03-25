@@ -1,0 +1,110 @@
+\begin{thebibliography}{10}
+
+\bibitem{alves2003camera}
+J.~Alves, J.~Lobo, and J.~Dias.
+\newblock Camera-inertial sensor modelling and alignment for visual navigation.
+\newblock {\em Machine Intelligence and Robotic Control}, 5(3):103--112, 2003.
+
+\bibitem{ashrafi2001relative}
+B.~Ashrafi, D.~P. Madau, and H.~E. Tseng.
+\newblock Relative vehicle platform having synchronized adaptive offset
+  calibration for lateral accelerometer and steering angle sensor, Feb 6 2001.
+\newblock US Patent 6,185,485.
+
+\bibitem{sencam}
+G.~A. AYDEMİR.
+\newblock Kalman filter based fusion of camera and inertial sensor measurements
+  for body state estimation.
+\newblock {\em Middle East Technical University}, 13(3):506--514, 2009.
+
+\bibitem{barshan1995inertial}
+B.~Barshan and H.~F. Durrant-Whyte.
+\newblock Inertial navigation systems for mobile robots.
+\newblock {\em Robotics and Automation, IEEE Transactions on}, 11(3):328--342,
+  1995.
+
+\bibitem{brezmes2009activity}
+T.~Brezmes, J.-L. Gorricho, and J.~Cotrina.
+\newblock Activity recognition from accelerometer data on a mobile phone.
+\newblock In {\em Distributed computing, artificial intelligence,
+  bioinformatics, soft computing, and ambient assisted living}, pages 796--799.
+  Springer, 2009.
+
+\bibitem{brooks1998multi}
+R.~R. Brooks and S.~S. Iyengar.
+\newblock {\em Multi-sensor fusion: fundamentals and applications with
+  software}.
+\newblock Prentice-Hall, Inc., 1998.
+
+\bibitem{essl2007shamus}
+G.~Essl and M.~Rohs.
+\newblock Shamus-a sensor based integrated mobile phone instrument.
+\newblock In {\em Proceedings of the International Computer Music Conference
+  ICMC (2007)}, volume~40, page~50, 2007.
+
+\bibitem{klein2004sensor}
+L.~A. Klein.
+\newblock {\em Sensor and data fusion: a tool for information assessment and
+  decision making}, volume 324.
+\newblock SPIE press Bellingham\^{} eWA WA, 2004.
+
+\bibitem{krasner2003methods}
+N.~F. Krasner and E.~V. Jolley.
+\newblock Methods and apparatuses for using mobile gps receivers to synchronize
+  basestations in cellular networks, Dec 16 2003.
+\newblock US Patent 6,665,541.
+
+\bibitem{luinge2005measuring}
+H.~J. Luinge and P.~H. Veltink.
+\newblock Measuring orientation of human body segments using miniature
+  gyroscopes and accelerometers.
+\newblock {\em Medical and Biological Engineering and computing},
+  43(2):273--282, 2005.
+
+\bibitem{mahony2005complementary}
+R.~Mahony, T.~Hamel, and J.-M. Pflimlin.
+\newblock Complementary filter design on the special orthogonal group so (3).
+\newblock In {\em Decision and Control, 2005 and 2005 European Control
+  Conference. CDC-ECC'05. 44th IEEE Conference on}, pages 1477--1484. IEEE,
+  2005.
+
+\bibitem{gyro}
+J.~Pieter.
+\newblock Getting the angular position from gyroscope data, June 09 2012.
+
+\bibitem{comp}
+J.~Pieter.
+\newblock Reading a imu without kalman: The complementary filter, March 26
+  2013.
+
+\bibitem{psiaki1990three}
+M.~L. Psiaki, F.~Martel, and P.~K. Pal.
+\newblock Three-axis attitude determination via kalman filtering of
+  magnetometer data.
+\newblock {\em Journal of Guidance, Control, and Dynamics}, 13(3):506--514,
+  1990.
+
+\bibitem{accell}
+D.~Redell.
+\newblock Thinking about accelerometers and gravity, Jan 11 1998.
+
+\bibitem{roetenberg2005compensation}
+D.~Roetenberg, H.~J. Luinge, C.~T. Baten, and P.~H. Veltink.
+\newblock Compensation of magnetic disturbances improves inertial and magnetic
+  sensing of human body segment orientation.
+\newblock {\em Neural Systems and Rehabilitation Engineering, IEEE Transactions
+  on}, 13(3):395--405, 2005.
+
+\bibitem{wang2009framework}
+Y.~Wang, J.~Lin, M.~Annavaram, Q.~A. Jacobson, J.~Hong, B.~Krishnamachari, and
+  N.~Sadeh.
+\newblock A framework of energy efficient mobile sensing for automatic user
+  state recognition.
+\newblock In {\em Proceedings of the 7th international conference on Mobile
+  systems, applications, and services}, pages 179--192. ACM, 2009.
+
+\bibitem{welch1995introduction}
+G.~Welch and G.~Bishop.
+\newblock An introduction to the kalman filter, 1995.
+
+\end{thebibliography}

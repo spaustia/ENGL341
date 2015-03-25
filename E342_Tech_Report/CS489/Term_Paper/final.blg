@@ -1,0 +1,14 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: final.aux
+The style file: abbrv.bst
+Database file #1: final.bib
+Warning--entry type for "accell" isn't style-file defined
+--line 42 of file final.bib
+Warning--entry type for "gyro" isn't style-file defined
+--line 66 of file final.bib
+Warning--entry type for "comp" isn't style-file defined
+--line 85 of file final.bib
+Repeated entry---line 160 of file final.bib
+ : @misc{welch1995introduction
+ :                            ,
+I'm skipping whatever remains of this entry
+(There was 1 error message)

@@ -1,0 +1,26 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Accelerometer}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Limitations}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Sampling Rate}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Yaw}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Noise}{subsection.2.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Velocity \046 Drift}{subsection.2.1}% 7
+\BOOKMARK [1][-]{section.3}{Gyroscope}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Limitations}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Angular Position \046 Drift}{subsection.3.1}% 10
+\BOOKMARK [1][-]{section.4}{Magnetometer}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Limitations}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Magnetic Fields}{subsection.4.1}% 13
+\BOOKMARK [1][-]{section.5}{GPS}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Limitations}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Line of Sight}{subsection.5.1}% 16
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Sampling rate}{subsection.5.1}% 17
+\BOOKMARK [1][-]{section.6}{Camera}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Limitations}{section.6}% 19
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Processing Resources}{subsection.6.1}% 20
+\BOOKMARK [1][-]{section.7}{Sensor Fusion}{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{The Kalman Filter}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.2}{The Complementary Filter}{section.7}% 23
+\BOOKMARK [1][-]{section.8}{Implementation}{}% 24
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 25
+\BOOKMARK [1][-]{section.10}{References}{}% 26

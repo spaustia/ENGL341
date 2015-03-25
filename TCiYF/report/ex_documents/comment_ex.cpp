@@ -1,15 +1,3 @@
-//========= Copyright © 1996-2002, Valve LLC, All rights reserved. ============
-//
-// Purpose: 
-//
-// $NoKeywords: $
-//=============================================================================
-
-#include <assert.h>
-#include "StudioModelRenderer.h"
-#include "GameStudioModelRenderer.h"
-#include "Exports.h"
-
 //
 // Override the StudioModelRender virtual member functions here to implement custom bone
 // setup, blending, etc.
@@ -32,44 +20,6 @@ CGameStudioModelRenderer::CGameStudioModelRenderer( void )
 ////////////////////////////////////
 // Hooks to class implementation
 ////////////////////////////////////
-
-/*
-====================
-R_StudioDrawPlayer
-====================
-*/
-int R_StudioDrawPlayer( int flags, entity_state_t *pplayer )
-{
-  return g_StudioRenderer.StudioDrawPlayer( flags, pplayer );
-}
-
-/*
-====================
-R_StudioDrawModel
-====================
-*/
-int R_StudioDrawModel( int flags )
-{
-  return g_StudioRenderer.StudioDrawModel( flags );
-}
-
-/*
-====================
-R_StudioInit
-====================
-*/
-void R_StudioInit( void )
-{
-  g_StudioRenderer.Init();
-}
-
-// The simple drawing interface we'll pass back to the engine
-r_studio_interface_t studio =
-{
-  STUDIO_INTERFACE_VERSION,
-  R_StudioDrawModel,
-  R_StudioDrawPlayer,
-};
 
 /*
 ====================

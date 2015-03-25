@@ -32,6 +32,14 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+\bibitem[\protect\citeauthoryear{ACM}{ACM}{2012}]%
+        {acm}
+{ACM}. 2012.
+\newblock \showarticletitle{ACM Journals Word Style Guide}.
+\newblock {\em ACM Publications\/} {4}, 2 (nov 2012).
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Highsmith and Cockburn}{Highsmith and
   Cockburn}{2001}]%
         {highsmith}
