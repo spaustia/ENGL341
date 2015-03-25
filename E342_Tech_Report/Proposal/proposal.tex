@@ -4,7 +4,6 @@
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 
 
-
 \title{Technical Report Proposal}
 \author{\begin{tabular}{c}
 Steven Paustian \\
@@ -19,7 +18,7 @@ Socorro, NM 87801
 \begin{document}
 
 \maketitle
-
+\nocite{*}
 
 
 \tableofcontents
@@ -28,7 +27,8 @@ Socorro, NM 87801
 
 \section{Project Summary}
 
-The purpose of this report will be to recommend a sensor fusion technique to increase the accuracy movement detection in mobile devices.  To accomplish this, three sensor fusion algorithms will be implemented on my cellular phone and data gathered on the accuracy of phone movement.
+The purpose of this report will be to recommend a sensor fusion technique to increase the accuracy movement detection in mobile devices.  To accomplish this, three sensor fusion algorithms will be implemented on my cellular phone and data gathered on the accuracy of phone movement.  The report will then analyze and recommend an algorithm.
+
 
 Most modern mobile devices contain a variety of sensors, including a gyroscope, accelerometer, magnetometer (compass) and camera.  These sensors take measurements in discrete intervals, and changes in values between readings are not reported.  This means that no single sensor can accurately convey a device's movement through space.  In order to gain a better understanding of a phone's movement, sensors must be ``fused" together.
 
@@ -39,47 +39,83 @@ TODO: expand
 \begin{itemize}
 \item{ Introduction }
 
-\item { Sensor Overview and Limitations
+\item { Sensors
 
  \begin{itemize}
-\item Accelerometer
-\item Gyroscope
-\item Magnetometer
-\item Camera
+\item Accelerometer {
 
-\end{itemize}• 
+\begin{itemize}
+\item Limitations
+
+\end{itemize}•
+}
+\item Gyroscope {
+
+\begin{itemize}
+\item Limitations
+\end{itemize}•
+}
+\item Magnetometer {
+\begin{itemize}
+\item Limitations
+\end{itemize}•
+}
+\item Camera {
+\begin{itemize}
+\item Limitations
+\end{itemize}
+}
+\end{itemize}
 }
 
 \item { Sensor Fusion
-
 \begin{itemize}
-\item Complementary Filter
-\item Kaulman Filter
-\item TODO: find 3rd method
-
+\item Complementary Filter {
+\begin{itemize}
+\item Implementation
 \end{itemize}•
+}
+\item {Kaulman Filter
+\begin{itemize}
+\item Implementation
+\end{itemize}•
+}
+\item{ TODO: find 3rd method
+\begin{itemize}
+\item Implementation
+\end{itemize}
+}
+\end{itemize}
 
  }
 
 \item Results
-
+\item Discussion
+\item Conclusion
 
 
 \end{itemize}
 
 \section{Outcome}
-The report will recommend an algorithm for sensing phone movement using multiple sensors.
+The report will use the Association for Computing Machinery (ACM) SIGS style guide for both the report and references.  This is very similar to IEEE format.
 
 \section{Primary Research Strategies}
-asd
+Primary research for this report will be based on experimental measurements.  Three algorithms for fusing sensor measurements will be implemented, and their accuracy measured and analyzed.
+
+The primary experiment will consist of the phone being attached to a drill, then spun for various numbers of rotations.  The phone will then display the number of rotations it perceived, which will be recorded and analyzed. \cite{lu2009soundsense}
+
 
 \section{Secondary Research Strategies}
 asdfa
 
 \section{Timeline}
-adf
+TODO
 
 \section{Questions and Concerns}
-I'm concened
+TODO
+
+
+\bibliographystyle{acm}
+\bibliography{proposal}
 
 \end{document}

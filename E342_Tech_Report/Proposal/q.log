@@ -1,0 +1,11 @@
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014/MacPorts 2014_4) (rev 4971)  (format=luatex 2015.1.27)  25 MAR 2015 11:28
+ restricted \write18 enabled.
+**q
+(/opt/local/share/texmf-texlive/tex/latex/tools/q.tex File ignored
+)
+! Emergency stop.
+<*> q
+  
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!
